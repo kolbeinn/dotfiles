@@ -8,6 +8,7 @@ export PS1="\u@\h \[\e[32m\]\w \[\e[91m\]\$(parse_git_branch)\[\e[00m\]$ "
 GPG_TTY=$(tty)
 export GPG_TTY
 
+alias vim='nvim'
 alias ls='ls --color'
 alias g='git'
 alias ga='git add'

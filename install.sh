@@ -1,2 +1,5 @@
-brew install rg
-brew install lacework/tap/lacework-cli
+BREW=/home/linuxbrew/.linuxbrew/bin/brew
+
+$BREW install rg
+$BREW install lacework/tap/lacework-cli
+$BREW install neovim
