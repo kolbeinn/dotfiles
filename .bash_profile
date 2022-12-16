@@ -1,4 +1,4 @@
-export PATH=$HOME/go/bin:$PATH
+export PATH=$HOME/bin:$HOME/go/bin:$PATH
 
 parse_git_branch() {
      git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
@@ -21,3 +21,4 @@ alias gl='git log'
 alias gpl='git pull'
 alias gs='git status'
 alias gsw='git switch'
+alias gsf='git switch `git branch --sort=-committerdate | fzf`'
