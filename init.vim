@@ -1,5 +1,6 @@
 " plugins
 call plug#begin()
+  Plug 'neoclide/coc.nvim', {'branch': 'release'}
   Plug 'tpope/vim-fugitive'
   Plug 'dracula/vim'
   Plug 'preservim/nerdtree'
@@ -14,12 +15,13 @@ call plug#end()
 set number
 colorscheme dracula
 set ttyfast
-set splitright
-set splitbelow
 set tabstop=4
+set shiftwidth=4
 set cursorline
+set cc=80
 
 " key bindings
+inoremap <expr> <cr> coc#pum#visible() ? coc#pum#confirm() : "\<CR>"
 :inoremap ii <Esc>
 
 nnoremap <C-h> <C-w>h
