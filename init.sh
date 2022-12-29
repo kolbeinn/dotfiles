@@ -28,3 +28,8 @@ alias gpl='git pull'
 alias gs='git status'
 alias gsw='git switch'
 alias gsf='git switch `git branch --sort=-committerdate | fzf`'
+alias k='kubectl'
+
+# LW Dev settings
+LW_DEV_ENV=qan1
+export PATH=$PATH:$HOME/baga/includes

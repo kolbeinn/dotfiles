@@ -14,7 +14,7 @@ cp ./init.vim ~/.config/nvim
 cp ./coc-settings.json ~/.config/nvim
 
 mkdir -p ~/.config/kolbeinn
-cp ./init.shell ~/.config/kolbeinn
+cp ./init.sh ~/.config/kolbeinn
 
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
