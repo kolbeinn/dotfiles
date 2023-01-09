@@ -6,6 +6,7 @@ $BREW install lacework/tap/lacework-cli
 $BREW install neovim
 $BREW install fzf
 $BREW install kubectx
+$BREW install lsof
 
 sudo $APT update
 sudo $APT install net-tools

@@ -13,22 +13,9 @@ if [[ -e $KEYFILE ]]; then
 	source $KEYFILE
 fi
 
-alias vim='nvim'
 alias ls='ls --color'
-alias g='git'
-alias ga='git add'
-alias gaac='git add --all && git commit -sS'
-alias gau='git add -u'
-alias gb='git branch'
-alias gbsc='git branch --sort=-committerdate'
-alias gc='git commit -sS'
-alias gd='git diff'
-alias gl='git log'
-alias gpl='git pull'
-alias gs='git status'
-alias gsw='git switch'
-alias gsf='git switch `git branch --sort=-committerdate | fzf`'
-alias k='kubectl'
+
+source ~/dotfiles/alias.sh
 
 # LW Dev settings
 LW_DEV_ENV=qan1
