@@ -1,1 +1,1 @@
-source ~/.config/kolbeinn/init.sh
+source ~/dotfiles/init.sh
